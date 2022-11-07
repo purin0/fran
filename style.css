@@ -39,6 +39,8 @@ a:visited {
 /* mouse over link */
 a:hover {
   color:#A79A9A;
+webkit-filter: blur(0.01px);
+filter: blur(1px);
 }
 ::selection {
     background: #A49C9C;
@@ -74,7 +76,13 @@ subtitle{
 
 
 main{
-  border: 1px solid #442124;
+  border-right-width:7px;
+border-right-style:solid;
+  border-top-width:7px;
+border-top-style:solid;
+  border-bottom-width:7px;
+border-bottom-style:solid;
+border-image: url("https://i.imgur.com/FsgoCPW.png") 7 fill round;
   max-width:40%;
   background-color:#FCFBFB;
   padding: 0px 0px 3px 0px;
@@ -91,19 +99,49 @@ main{
 
 #fran{
   font-size:25px;
+  color:#F1847B;
 }
 
 aside {
 writing-mode: vertical-rl;
 text-orientation: mixed;
- width:8%;
+ max-width:8%;
   background-color:#FCFBFB;
   font-family:'adelia';
   text-align: center;
-  border-top: 1px solid #442124;
-  border-left: 1px solid #442124;
-  border-bottom: 1px solid #442124;
+  border-right: 1px solid #442124;
+  border-left-width:7px;
+border-left-style:solid;
+  border-top-width:7px;
+border-top-style:solid;
+  border-bottom-width:7px;
+border-bottom-style:solid;
+border-image: url("https://i.imgur.com/FsgoCPW.png") 7 fill round;
 }
+
+
+
+
+
+
+
+#fran {
+color: #fff;
+font-size: 1.75em;
+background: -webkit-linear-gradient(-90deg, #F1847B 0%, #F5C09F 100%);
+-webkit-background-clip: text;
+-webkit-text-stroke: 4px transparent;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -114,10 +152,11 @@ text-orientation: mixed;
   
   .container{
     margin-left:20%;
+    margin-top:45%;
   }
   
   aside{
-   width:15%;
+   max-width:15%;
   }
   
   main{
@@ -128,3 +167,6 @@ text-orientation: mixed;
   subtitle{
     font-size:12px;
   }
+  
+  
+  
